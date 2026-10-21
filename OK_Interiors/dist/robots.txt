@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://okinteriors.design/sitemap.xml
+
+# OK Interiors — Luxury Interior Architecture & Design
+# https://www.instagram.com/ok_interiors/

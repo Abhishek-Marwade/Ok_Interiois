@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-ivory: #FBF9F5;
+    --color-limestone: #F4EFEB;
+    --color-charcoal: #171615;
+    --color-bronze: #C5A880;
+    --color-walnut: #5C4033;
+    --color-sand: #EAE5DC;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: #292524;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A3875D;
+}
+
+/* Focus rings for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #C5A880;
+  outline-offset: 2px;
+}
+
+/* Image zoom transition */
+.img-hover-scale {
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.group:hover .img-hover-scale {
+  transform: scale(1.05);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#171615" />
+  <!-- Elegant geometric monogram for OK Interiors -->
+  <circle cx="25" cy="32" r="13" fill="none" stroke="#D4AF37" stroke-width="2.8" />
+  <line x1="41" y1="19" x2="41" y2="45" stroke="#F5F2EB" stroke-width="2.8" stroke-linecap="round" />
+  <line x1="41" y1="32" x2="51" y2="21" stroke="#F5F2EB" stroke-width="2.8" stroke-linecap="round" />
+  <line x1="41" y1="32" x2="52" y2="45" stroke="#F5F2EB" stroke-width="2.8" stroke-linecap="round" />
+  <circle cx="25" cy="32" r="3" fill="#D4AF37" />
+</svg>
